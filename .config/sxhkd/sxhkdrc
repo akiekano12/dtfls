@@ -1,0 +1,65 @@
+# terminal emulator
+super + Return
+    xfce4-terminal 
+
+# telegram
+super + p 
+    telegram-desktop
+
+# program launcher
+super + q
+    xfce4-terminal -e htop 
+    
+# sxhkd reload
+alt + shift  + Escape
+     i3lock -i ~/.dwm/img/hololock.png
+
+super + shift + Escape
+     i3lock -i ~/.dwm/img/hololock.png -c 000000 ; loginctl suspend
+
+super + {shift + o,o,shift + p, p}
+    mpc --host=0.0.0.0 --port=6600 {prev,next,rand,single}
+
+super + s
+    brave-bin --enable-features=VaapiVideoDecoder
+
+super + w
+    xfce4-terminal
+
+XF86AudioRaiseVolume
+    amixer -c 1 set Master 5%+
+XF86AudioLowerVolume
+    amixer -c 1 set Master 5%-
+XF86AudioMute
+    amixer -c 1 set Master toggle
+alt + shift + Up
+    amixer -c 1 set Headphone 2%+
+alt + shift + Down
+    amixer -c 1 set Headphone 2%-
+
+F1
+    amixer -c 1 set Master toggle
+F2
+    amixer -c 1 set Master 5%-
+F3
+    amixer -c 1 set Master 5%+
+
+F11
+    doas light -s sysfs/backlight/amdgpu_bl0 -U 5
+F12
+    doas light -s sysfs/backlight/amdgpu_bl0 -A 5
+alt + F5
+    doas light -s sysfs/backlight/amdgpu_bl0 -U 70
+
+super + e
+	thunar /home/akiekano
+super + a
+    xfce4-terminal -e mocp
+
+Print
+    ~/.local/bin/crot
+super + Print
+    ~/.local/bin/crots
+
+super + z
+    subl 
