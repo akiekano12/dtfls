@@ -1,0 +1,3 @@
+#!/bin/sh
+maim -s -k -u -f png -d 1 -q ~/Pictures/Screenshots/$(date +%Y-%m-%d_%H_%M_%S).png
+#echo "Crot!!"

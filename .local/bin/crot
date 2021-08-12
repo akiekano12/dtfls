@@ -1,0 +1,5 @@
+#!/bin/sh
+#notify-send "3.. 2.. 1.. !"
+#echo "3.. 2.. 1.."
+maim -u -f png -d 1 -q ~/Pictures/Screenshots/$(date +%Y-%m-%d_%H_%M_%S).png
+#echo "Crot!!"
