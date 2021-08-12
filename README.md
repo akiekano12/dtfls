@@ -1,4 +1,4 @@
-# dotfiles
+# Akiekano dotfiles 
 Cute anime dotfiles but faster 😈
 
 dwm - dynamic window manager
