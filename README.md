@@ -49,3 +49,8 @@ Configuration
 -------------
 The configuration of dwm is done by creating a custom config.h
 and (re)compiling the source code.
+
+
+Inspiration
+-------------
+ - owl4ce ---> https://github.com/owl4ce
