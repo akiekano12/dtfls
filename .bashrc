@@ -1,3 +1,7 @@
+#Ctrl + 1	Ctrl + 4	Kualitas tetap asli sambil meningkatkan detail
+#Ctrl + 2	Ctrl + 5	Meningkatkan kualitas
+#Ctrl + 3	Ctrl + 6	Meningkatkan kualitas dan mengurangi blur/out-of-focus
+#Ctrl + 0	Ctrl + 0	Menonaktifkan shader
 # /etc/skel/.bashrc
 #
 # This file is sourced by all *interactive* bash shells on startup,
@@ -50,8 +54,20 @@ alias ytdownloadmus="youtube-dl -f "bestaudio[acodec*=opus]" -x --add-metadata"
 alias ytdownloadvid="youtube-dl -i -f mp4 --yes-playlist"
 alias yt3='mpv --ytdl-format="bestvideo[height<=?360]+bestaudio/best[height<=?360]"'
 
+if command -v "sudo" &>/dev/null; then
+    PRIV="sudo"
+elif command -v "doas" &>/dev/null; then
+    PRIV="doas"
+else
+    printf "\e[1;31m > error:\e[0m sudo or doas not found!\n" >&2
+fi
+
+alias rc-service="$PRIV rc-service"
+alias rc-update="$PRIV rc-update"
+
 # Put your fun stuff here.
 export PATH="$HOME/.local/bin:$HOME/.node_modules/bin:$HOME/.node_modules:$PATH"
+export DRI_PRIME=1
 export VDPAU_DRIVER=radeonsi
 MOZ_X11_EGL=1
 cd ~
