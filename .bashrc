@@ -71,3 +71,8 @@ export DRI_PRIME=1
 export VDPAU_DRIVER=radeonsi
 MOZ_X11_EGL=1
 cd ~
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+#sxhkd
+neofetch
+export GPG_TTY=$(tty)
