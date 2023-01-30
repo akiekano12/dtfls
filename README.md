@@ -54,3 +54,5 @@ and (re)compiling the source code.
 Inspiration
 -------------
  - owl4ce ---> https://github.com/owl4ce
+ - ammar faizi ---> https://github.com/ammarfaizi2
+ - irvan malik ---> https://github.com/irvanmalik48
